@@ -1,0 +1,593 @@
+ Program
+   Robot Program
+     MoveL
+       Intermediar_cub
+       preluare_marker
+       Wait: 0.5
+       'G 10'
+       Wait: 0.5
+     MoveL
+       ridicare_marker
+     MoveJ
+       deasupra_colt_f
+     MoveL
+       marker_pe_colt
+     If digital_in[1] == True
+       Call Desen_L
+       Call Lasa_Marker_Poz_cub
+       Call Deasupra_cuburi
+       Call Umple_P1_L
+       Call Umple_P2_L
+       Call UMPLE_P3_L
+       Call Umplu_P4_L
+       Call Umplu_P5_L
+       Call Umplu_P6_L
+     If digital_in[2] ==  True 
+       Call Desen_i
+       Call Lasa_Marker_Poz_cub
+       Call Deasupra_cuburi
+       Call Umple_P1_L
+       Call Umplu_p2_i
+       Call Umplu_p3_i
+     If digital_in[3] ==  True 
+       Call Desen_H
+       Call Lasa_Marker_Poz_cub
+       Call Deasupra_cuburi
+       Call Umple_P1_L
+       Call Umple_P2_L
+       Call UMPLE_P3_L
+       Call Umple_P4_H
+       Call Umple_P5_H
+       Call Umple_P6_H
+       Call Umple_P7_H
+     If digital_in[5] ==  True 
+       Call Desen_T
+       Call Lasa_Marker_Poz_cub
+       Call Deasupra_cuburi
+       Call Umple_P1_L
+       Call Umple_P2_T
+       Call Umple_p3_T
+       Call Umplu_p4_t
+       Call Umplu_p5_T
+       Call Umple_P6_T
+   Umple_P7_H
+     MoveJ
+       INTERMED_P7_H
+       Wait: 0.5
+     MoveJ
+       DEAS_C7_H
+       Wait: 0.5
+     MoveL
+       PREL_C7_H
+       Wait: 0.5
+       'G40'
+     MoveL
+       DEAS_C7_HH
+       Wait: 0.5
+     MoveJ
+       intermed
+       Wait: 0.5
+     MoveJ
+       DEAS_P7_H_FOAIE
+       Wait: 0.5
+     MoveJ
+       LAS_P7_H_FOAIE
+       Wait: 0.5
+       'G 80'
+     MoveL
+       DEAS_C7_H_FOAIE
+   Umple_P6_H
+     MoveJ
+       INTERM_C6_H
+       Wait: 0.5
+     MoveJ
+       DEAS_C6_H
+       Wait: 0.5
+     MoveL
+       PREL_C6_H
+       Wait: 0.5
+       'G40'
+     MoveL
+       DEAS_C6_HH
+       Wait: 0.5
+     MoveJ
+       INTERMEDIARR
+       Wait: 0.5
+     MoveJ
+       DEAS_P6_H_FOAIE
+       Wait: 0.5
+     MoveL
+       LAS_P6_H_FOAIE
+       Wait: 0.5
+       'G 80'
+     MoveL
+       DEAS_C6_H_FOAIE
+       Wait: 0.5
+   Umple_P5_H
+     MoveJ
+       INTERM_P5_H
+       Wait: 0.5
+     MoveJ
+       DEAS_C5_H
+       Wait: 0.5
+     MoveL
+       PREL_C5_H
+       Wait: 0.5
+       'G40'
+     MoveL
+       DEAS_C5_HH
+       Wait: 0.5
+     MoveJ
+       inter
+       Wait: 0.5
+     MoveJ
+       DEAS_P5_H_FOAIE
+       Wait: 0.5
+     MoveL
+       LAS_P5_H_FOAIE
+       Wait: 0.5
+       'G 80'
+     MoveL
+       DEAS_C5_H_FOAIE
+       Wait: 0.5
+   Umple_P4_H
+     MoveJ
+       INTERM_P4_H
+       Wait: 0.5
+     MoveJ
+       DEAS_C4_H
+       Wait: 0.5
+     MoveL
+       PREL_C4_H
+       Wait: 0.5
+       'G40'
+     MoveL
+       DEAS_C4_HH
+       Wait: 0.5
+     MoveJ
+       INTERMEDIA
+       Wait: 0.5
+     MoveJ
+       DEAS_P4_H_FOAIE
+       Wait: 0.5
+     MoveL
+       LAS_P4_H_FOAIE
+       Wait: 0.5
+       'G 80'
+     MoveL
+       DEAS_P4_H
+       Wait: 0.5
+   Umple_P6_T
+     MoveJ
+       INTERM_C6_T
+       Wait: 0.5
+     MoveJ
+       DEAS_C6_T
+       Wait: 0.5
+     MoveL
+       PREL_C6_T
+       Wait: 0.5
+       'G40'
+     MoveL
+       DEAS_C6_TT
+       Wait: 0.5
+     MoveJ
+       INTERME
+       Wait: 0.5
+     MoveJ
+       DEAS_P6_T_FOAIE
+       Wait: 0.5
+     MoveL
+       LAS_C6_T_FOAIE
+       Wait: 0.5
+       'G 80'
+     MoveL
+       DEAS_P6_T
+       Wait: 0.5
+   Umplu_p5_T
+     MoveJ
+       INTERM_P5_T
+       Wait: 0.5
+     MoveJ
+       DEAS_C5_T
+       Wait: 0.5
+     MoveL
+       PREL_C5_T
+       Wait: 0.5
+       'G40'
+     MoveL
+       DEAS_C5_TT
+       Wait: 0.5
+     MoveJ
+       INter
+       Wait: 0.5
+     MoveJ
+       DEAS_P5_T_FOAIE
+       Wait: 0.5
+     MoveL
+       LAS_C5_T_FOAIE
+       Wait: 0.5
+       'G 80'
+     MoveL
+       DEAS_P5
+       Wait: 0.5
+   Umplu_p4_t
+     MoveJ
+       interm_p4_t
+       Wait: 0.5
+     MoveJ
+       deas_c4_T
+       Wait: 0.5
+     MoveL
+       PREL_C4_T
+       Wait: 0.5
+       'G40'
+     MoveL
+       DEAS_C4_T
+       Wait: 0.5
+     MoveJ
+       INTERMEDIAR
+       Wait: 0.5
+     MoveJ
+       DEAS_P4_T_FOAIE
+       Wait: 0.5
+     MoveL
+       LAS_P4_T_FOAIE
+       Wait: 0.5
+       'G 80'
+     MoveL
+       DEAS_P4_T
+       Wait: 0.5
+   Umple_p3_T
+     MoveJ
+       INTERM_P3_T
+       Wait: 0.5
+     MoveJ
+       DEAS_C3_T
+       Wait: 0.5
+     MoveL
+       PREL_C3_T
+       Wait: 0.5
+       'G40'
+     MoveL
+       DEAS_C3_TT
+       Wait: 0.5
+     MoveJ
+       INTERMEDD
+       Wait: 0.5
+     MoveJ
+       DEAS_P3_T_FOAIE
+       Wait: 0.5
+     MoveL
+       LAS_P3_T_FOAIE
+       Wait: 0.5
+       'G 80'
+     MoveL
+       DEAS_P3_T
+       Wait: 0.5
+   Umple_P2_T
+     MoveJ
+       INTERM_P2_T
+       Wait: 0.5
+     MoveJ
+       DEAS_P2_T
+       Wait: 0.5
+     MoveL
+       PREL_C2_T
+       Wait: 0.5
+       'G40'
+     MoveL
+       DEAS_C2_T
+       Wait: 0.5
+     MoveJ
+       INTERMED
+       Wait: 0.5
+     MoveJ
+       DEAS_P2_T_FOAIE
+       Wait: 0.5
+     MoveL
+       LAS_P2_T_FOAIE
+       Wait: 0.5
+       'G 80'
+     MoveL
+       DEAS_P2_T_F
+       Wait: 0.5
+   Desen_H
+     MoveL
+       L1_H
+     MoveL
+       L2_H
+     MoveL
+       L3_H
+     MoveL
+       L4_H
+     MoveL
+       L5_H
+     MoveL
+       L6_H
+     MoveL
+       L7_H
+     MoveL
+       L8
+     MoveL
+       L9_H
+     MoveL
+       L10_H
+     MoveL
+       L11_H
+     MoveL
+       L12_H
+   Desen_T
+     MoveL
+       l1_T
+     MoveL
+       l2_T
+     MoveL
+       l3_T
+     MoveL
+       l4_T
+     MoveL
+       l5_T
+     MoveL
+       l6_T
+     MoveL
+       l7_T
+     MoveL
+       l8_T
+   Umplu_p3_i
+     MoveJ
+       interm_p3
+       Wait: 0.5
+     MoveJ
+       deas_c3_i
+       Wait: 0.5
+     MoveL
+       prel_3_i
+       Wait: 0.5
+       'G40'
+     MoveL
+       deas_c3_ii
+       Wait: 0.5
+     MoveJ
+       interm
+       Wait: 0.5
+     MoveJ
+       deas_p3_i_foaie
+       Wait: 0.5
+     MoveL
+       las_p3_i_foaie
+       Wait: 0.5
+       'G 80'
+     MoveL
+       deas_p3_i
+   Umplu_p2_i
+     MoveJ
+       interm_p2_i
+       Wait: 0.5
+     MoveJ
+       deas_c2_i
+       Wait: 0.5
+     MoveL
+       prel_c2_i
+       Wait: 0.5
+       'G40'
+     MoveL
+       deas_c2_i2
+       Wait: 0.5
+     MoveJ
+       intermmm
+       Wait: 0.5
+     MoveJ
+       Deas_P2_I_FOaie
+       Wait: 0.5
+     MoveL
+       las_P2_i_foaie
+       Wait: 0.5
+       'G 80'
+     MoveL
+       deas_p2_i
+   Desen_i
+     MoveL
+       Caciulita_i1
+     MoveL
+       Caciulita_i2
+     MoveL
+       caciulita_i3
+     MoveL
+       Caciulita_i4
+     MoveL
+       spatiere1_i
+     MoveL
+       spatiere2_i
+     MoveL
+       spatiere3_i
+     MoveL
+       coada_i1
+     MoveL
+       coada_i2
+     MoveL
+       coada_i3
+     MoveL
+       coada_i4
+   Umplu_P6_L
+     MoveJ
+       INTERM_P6
+       Wait: 0.5
+     MoveJ
+       DEAS_C6_L
+       Wait: 0.5
+     MoveL
+       PREL_C6_L
+       Wait: 0.5
+       'G40'
+     MoveL
+       DEAS_C6_LL
+       Wait: 0.5
+     MoveJ
+       INTERRR
+       Wait: 0.5
+     MoveJ
+       DEAS_P6_L_FOAIE
+       Wait: 0.5
+     MoveL
+       LAS_C6_L_FOAIE
+       Wait: 0.5
+       'G 80'
+     MoveL
+       DEAS_P6_L
+   Umplu_P5_L
+     MoveJ
+       INTERM_P5
+       Wait: 0.5
+     MoveJ
+       DEAS_C5_L
+       Wait: 0.5
+     MoveL
+       PREL_C5_L
+       Wait: 0.5
+       'G40'
+     MoveL
+       DEAS_C5_LL
+       Wait: 0.5
+     MoveJ
+       INTERR
+       Wait: 0.5
+     MoveJ
+       DEAS_P5_L_FOAIE
+       Wait: 0.5
+     MoveL
+       LAS_P5_L_FOAIE
+       Wait: 0.5
+       'G 80'
+     MoveL
+       DEAS_P5_L
+   Umplu_P4_L
+     MoveJ
+       INTERM_P4
+       Wait: 0.5
+     MoveJ
+       DEAS_C4_L
+       Wait: 0.5
+     MoveL
+       PREL_C4_L
+       Wait: 0.5
+       'G40'
+     MoveL
+       DEAS_C4_LL
+       Wait: 0.5
+     MoveJ
+       INTER
+       Wait: 0.5
+     MoveJ
+       DEAS_P4_L_FOAIE
+       Wait: 0.5
+     MoveL
+       LAS_P4_L_FOAIE
+       Wait: 0.5
+       'G 80'
+     MoveL
+       DEAS_P4_L
+   UMPLE_P3_L
+     MoveJ
+       INTERM_P3
+       Wait: 0.5
+     MoveJ
+       DEAS_C3_L
+       Wait: 0.5
+     MoveL
+       PREL_C3_L
+       Wait: 0.5
+       'G40'
+     MoveL
+       DEAS_C3_LL
+       Wait: 0.5
+     MoveJ
+       INTERMMM
+       Wait: 0.5
+     MoveJ
+       DEAS_P3_L_FOAIE
+       Wait: 0.5
+     MoveL
+       LAS_P3_L_FOAIE
+       Wait: 0.5
+       'G 80'
+     MoveL
+       DEASUPRA_P3_L
+   Umple_P2_L
+     MoveJ
+       interm_P2
+       Wait: 0.5
+     MoveJ
+       DEAS_cub_C2_L
+       Wait: 0.5
+     MoveL
+       prel_c2_L
+       Wait: 0.5
+       'G40'
+     MoveL
+       deas_c2_L
+       Wait: 0.5
+     MoveJ
+       INTERM
+       Wait: 0.5
+     MoveJ
+       DEAS_P2_L_FOAIE
+       Wait: 0.5
+     MoveL
+       LAS_P2_L_FOAIE
+       Wait: 0.5
+       'G 80'
+     MoveL
+       DEAS_P2_L
+   Umple_P1_L
+     MoveJ
+       Intermediar_cub
+       Wait: 0.5
+     MoveJ
+       cb_deas_fo_cent
+       Wait: 0.5
+     MoveL
+       las_1_cub_foaie
+       Wait: 0.5
+       'G 80'
+     MoveL
+       Deasupra_foaiee
+   Deasupra_cuburi
+     MoveL
+       DeasupraMarker2
+     MoveJ
+       poz_intermcub
+     MoveL
+       prindere_cub
+       Wait: 0.5
+       'G40'
+     MoveL
+       poz_intermcub
+       Wait: 0.5
+   Lasa_Marker_Poz_cub
+     MoveL
+       DeasupraFoaie
+     MoveJ
+       DeasupraMarker
+     MoveL
+       LasaMarker
+       Wait: 0.5
+       'G 40'
+       Wait: 0.5
+     MoveL
+       DeasupraMarker2
+       Wait: 0.5
+       'G80'
+   Desen_L
+     MoveL
+       exterior_L
+     MoveL
+       Exterior_L2
+     MoveL
+       Exterior_L3
+     MoveL
+       Interior_L
+     MoveL
+       Interior_L2
+     MoveL
+       Interior_L3
