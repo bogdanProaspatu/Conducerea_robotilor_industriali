@@ -1,2 +1,2 @@
 # Conducerea_robotilor_industriali
-Paletizarea cuburilor în forme de litere  folosind un braț robotic (UR5).
+Desenarea unor litere si paletizarea cuburilor în interiorul acestora folosind un braț robotic (UR5).
